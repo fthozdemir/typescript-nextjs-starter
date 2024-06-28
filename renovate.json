@@ -5,5 +5,5 @@
   "stabilityDays": 2,
   "separateMajorMinor": true,
   "timezone": "Asia/Jakarta",
-  "schedule": ["before 11am on Monday"]
+  "schedule": ["every 2 weeks on Monday"]
 }
