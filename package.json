@@ -63,5 +63,8 @@
     "**/*.{json,css,scss,md,webmanifest}": [
       "prettier -w"
     ]
+  },
+  "prettier": {
+    "singleQuote": false
   }
 }
