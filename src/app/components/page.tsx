@@ -19,8 +19,8 @@ import ButtonLink from "@/components/links/ButtonLink";
 import PrimaryLink from "@/components/links/PrimaryLink";
 import UnderlineLink from "@/components/links/UnderlineLink";
 import UnstyledLink from "@/components/links/UnstyledLink";
-import NextImage from "@/components/NextImage";
-import Skeleton from "@/components/Skeleton";
+import NextImage from "@/components/ui/NextImage";
+import { Skeleton } from "@/components/ui/Skeleton";
 
 type Color = (typeof colorList)[number];
 
@@ -426,7 +426,13 @@ export default function ComponentPage() {
               <p className={clsx("!mt-1 text-sm", textColor)}>
                 Skeleton with shimmer effect
               </p>
-              <Skeleton className="h-72 w-72" />
+              <div className="flex flex-col space-y-3">
+                <Skeleton className="h-[125px] w-[250px] rounded-xl" />
+                <div className="space-y-2">
+                  <Skeleton className="h-4 w-[250px]" />
+                  <Skeleton className="h-4 w-[200px]" />
+                </div>
+              </div>
             </li>
           </ol>
         </div>
